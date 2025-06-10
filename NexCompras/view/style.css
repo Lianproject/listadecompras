@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* Esconde a mensagem para desktop por padrão */
+.mensagem-desktop {
+  display: none;
+}
+
+
+/* Em telas maiores que 768px, esconde o conteúdo e mostra o aviso */
+@media (min-width: 761px) {
+  .conteudo-celular {
+    display: none;
+  }
+
+  .mensagem-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+}
+
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 760px){
+
+body{max-height: 100dvh;
+background-image: url(../imagem/bg.png);
+background-repeat: no-repeat;
+background-size: 600px;
+background-position:center 350px;
+
+}
+main{
+  width: 100dvw;
+}
+
+.getvalor{
+   height: 100dvh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: blue;
+   flex-direction: column;
+
+ }
+ 
+.botao{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: 10px 10px;
+    border-radius: 5px; 
+    border: 5px;
+    background-color: rgb(101, 44, 148);
+    color: white;
+    cursor: pointer;
+
+    
+}
+.botao:hover{
+    background-color: rgb(173, 122, 221);
+    transition: 1.5;
+    
+}
+ 
+
+
+
+.txtvalor{
+border-radius: 5px;
+padding: 10px 10px;
+border: 0.5px solid #0000005d;
+
+
+  }
+  
+  
+  .logotxt{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .carrinhoimg{
+    width: 45px;
+    position: absolute;
+
+  }
+  .compras{display: flex;
+width: 100%;
+justify-content: flex-end;
+
+
+}
+
+.for form{ width:100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+   
+}
+
+.btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 7px 10px;
+    border-radius: 5px; 
+    border: 5px;
+    background-color: rgb(101, 44, 148);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+background-color: rgb(173, 122, 221);
+    transition: 1.5;
+
+}
+.qtdtxt{
+    width: 80px;
+}
+.vl{
+    max-width: 80px;
+    
+}
+
+.txt{
+    height: 30px;
+    background-color: rgb(68, 9, 124);
+    opacity: 55%;
+    border-radius: 5px;
+    border: 1px solid #0000005d;
+    color: #fff;
+    caret-color: rgb(255, 255, 255);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+.txt::placeholder{color: aliceblue;
+  text-align: center;
+}
+
+input{
+  text-align: center;;
+}
+
+input:focus{
+    border-color: 2px solid #157702;
+}
+p{
+    position: relative;
+    top:13px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+.formresp{
+    display: flex;
+    gap: 5px;
+}
+
+.totaltxt{
+  width: 125px;
+  border: none;
+  text-align: center;
+  height: 40px;
+
+}
+
+table {
+      width: 100%;
+      margin: 10px 0;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    th {
+      padding: 12px 13px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    td{
+      height: 50px;
+      text-align: center;
+      border-bottom: 1px solid #ddd; 
+      text-align: center;
+    }
+
+    th {
+      background-color: #6d1fb6;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+.totaltxt::placeholder{
+    color: black;  
+}
+
+.Delete{
+    height: 100%;
+    background-color: #cc5f51;
+    color: aliceblue;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.Delete:hover{ 
+    background-color: #ec2e15;   
+ }
+
+ }
+
+
+/* Estilos para telas menores que 390px */
+ @media (max-width: 390px){
+  th {
+      padding: 12px 8px;
+    }
+ }
+
+ /* Estilos para telas menores que 344px */
+ @media (max-width: 344px){
+  th {
+      padding: 12px 3px;
+    }
+
+    .formresp{
+    display: flex;
+    gap: 2px;
+}
+
+.qtdtxt{
+    width: 50px;
+}
+.vl{
+    max-width: 60px;
+    
+}
+
+.txt{
+    height: 30px;
+    background-color: rgb(68, 9, 124);
+    opacity: 55%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+ }
