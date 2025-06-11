@@ -17,7 +17,7 @@
     
     <form action="../controller/getValor.php" method="post"> 
        
-        <input name="txtValor" class="txtvalor" placeholder="Insira o Valor Disponivel" type="number">
+        <input name="txtValor" class="txtvalor" placeholder="Insira o Valor Disponivel" type="number" required>
         <button class="botao" >Entra no App</button>
     </form>
  </div>  
